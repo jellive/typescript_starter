@@ -17,4 +17,4 @@ function leakingAny(obj: any) {
 }
 
 const c = leakingAny({ num: 0 })
-c.indexOf('0') // this line error make because c is number
+// c.indexOf('0') // this line error make because c is number
