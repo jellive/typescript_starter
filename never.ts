@@ -21,6 +21,6 @@ if (typeof a !== 'string') {
   a // never
 }
 
-type Indexable<T> = T extends string ? T & { [index: string]: any } : never // 조건 확장부 타입
+type Indexable<T> = T extends string ? T & { [index: string]: any } : never // 조건 확장부 타입(T가 string를 상속받는다면, 해당 타입으로 변환한다.)
 
 type ObjectIndexable = Indexable<{}> // string이 아니면 never, string이면 [index: string]이 나온다.(실수를 줄일 수 있다.)
