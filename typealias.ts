@@ -31,3 +31,9 @@ another = 'anna'
  let tuplePerson: [string, number] = ['Mark', 35]
 type PersonTupe = [string, number]
 let personAnother: PersonTupe = ['Anna', 24]
+
+/**
+ * Aliasing Function
+ */
+
+ type EatType = (food: MyStringType) => void
