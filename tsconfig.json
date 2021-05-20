@@ -50,8 +50,8 @@
     // "baseUrl": "./",                             /* Base directory to resolve non-absolute module names. */
     // "paths": {},                                 /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                              /* List of root folders whose combined content represents the structure of the project at runtime. */
-    // "typeRoots": [],                             /* List of folders to include type definitions from. */
-    // "types": [],                                 /* Type declaration files to be included in compilation. */
+    // "typeRoots": [],                             /* (directory name을 씀.) @types 말고도 .d.ts의 위치를 알아서 지정할 수 있다. List of folders to include type definitions from.  */
+    // "types": [],                                 /* (package name을 씀. typeRoots와 types는 같이 사용하지 않는다.) Type declaration files to be included in compilation. */
     // "allowSyntheticDefaultImports": true,        /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
     // "preserveSymlinks": true,                    /* Do not resolve the real path of symlinks. */
