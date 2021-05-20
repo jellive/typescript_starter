@@ -16,5 +16,5 @@ class Person implements IPerson1 {
   }
 }
 
-const p51: Person = new Person('Mark')
+const p51: IPerson1 = new Person('Mark')
 p51.hello()
