@@ -9,7 +9,7 @@
     "lib": [
       "ES2015",
       "DOM"
-    ] /* 실행할 때 내장된 추가 기본 세팅타입에 대한 설정을 해준다. Specify library files to be included in the compilation. */,
+    ] /* 실행할 때 내장된 추가 기본 세팅타입에 대한 설정을 해준다. 이를테면 console같은거. es3 => lib.d.d.ts, es5 => dom, es5, scripthost, es6 => dom, es6.com.iterable, scripthost를 사용한다. Specify library files to be included in the compilation. */,
     // "allowJs": true,                             /* Allow javascript files to be compiled. */
     // "checkJs": true,                             /* Report errors in .js files. */
     // "jsx": "preserve",                           /* Specify JSX code generation: 'preserve', 'react-native', 'react', 'react-jsx' or 'react-jsxdev'. */
