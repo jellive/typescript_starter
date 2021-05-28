@@ -4,7 +4,7 @@ class ClassPerson {
   //   protected age: number // 외부에서 접근은 안 되지만, 상속받은 친구들은 접근이 된다.
   //    age: number
   //   age: number = 0
-  constructor(public name: string, public age: number) {}
+  constructor(private _name: string, public age: number) {}
   // constructor(name: string) {
   //   this.name = name
   // }
@@ -16,8 +16,18 @@ class ClassPerson {
   //       this.age = age
   //     }
   //   }
+
+  get name() {
+    console.log('get', this._name)
+    return this._name
+  }
+  set name(n: string) {
+    console.log('set', n)
+    this._name = n
+  }
 }
 
 const cp1 = new ClassPerson('mark', 39)
 
-console.log(cp1)
+console.log(cp1.name)
+cp1.name = 'jell'
