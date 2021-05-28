@@ -1,3 +1,5 @@
+// static methods & properties
+
 class HPerson {
   public static hello() {
     console.log('안녕하세요')
