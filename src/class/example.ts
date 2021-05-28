@@ -4,6 +4,9 @@ class ClassPerson {
   //   protected age: number // 외부에서 접근은 안 되지만, 상속받은 친구들은 접근이 된다.
   //    age: number
   //   age: number = 0
+
+  public readonly readname: string = 'Mark'
+  private readonly readcountry: string = 'Korea' // 추가로 constructor에서도 변경할 수 있다.
   constructor(private _name: string, public age: number) {}
   // constructor(name: string) {
   //   this.name = name
@@ -24,6 +27,9 @@ class ClassPerson {
   set name(n: string) {
     console.log('set', n)
     this._name = n
+  }
+  hello() {
+    // this.readname = '' // error!
   }
 }
 
