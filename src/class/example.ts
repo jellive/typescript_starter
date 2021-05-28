@@ -1,6 +1,8 @@
 class ClassPerson {
-  name: string = 'Mark'
-  age: number
+  public name: string = 'Mark'
+  //   private _age: number
+  //   protected age: number // 외부에서 접근은 안 되지만, 상속받은 친구들은 접근이 된다.
+  public age: number
   //   age: number = 0
   // constructor(name: string) {
   //   this.name = name
