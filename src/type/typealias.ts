@@ -6,15 +6,15 @@
  * 만들어진 타입의 refer로 사용하는 것이지 타입을 만드는 것은 아님.
  */
 
- type MyStringType = string
+type MyStringType = string
 
- const str = 'world'
- let myStr: MyStringType = 'hello'
- myStr = str
+const str = 'world'
+let myStr: MyStringType = 'hello'
+myStr = str
 
- /**
-  * Aliasing Union Type
-  */
+/**
+ * Aliasing Union Type
+ */
 
 let aliasPerson: string | number = 0
 aliasPerson = 'Mark'
@@ -28,7 +28,7 @@ another = 'anna'
  * Aliasing Tuple
  */
 
- let tuplePerson: [string, number] = ['Mark', 35]
+let tuplePerson: [string, number] = ['Mark', 35]
 type PersonTupe = [string, number]
 let personAnother: PersonTupe = ['Anna', 24]
 
@@ -36,4 +36,4 @@ let personAnother: PersonTupe = ['Anna', 24]
  * Aliasing Function
  */
 
- type EatType = (food: MyStringType) => void
+type FoodEatType = (food: MyStringType) => void
